@@ -221,7 +221,7 @@
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間："+period);
         $('#btnA').prop("disabled", false);
-        $('#btnA').css("background-color","yellow")
+        $('#btnA').css("background-color","yellow");
     }
     function btnDClick(e){
         btnCClick(null);
@@ -233,7 +233,7 @@
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間："+period);
         $('#btnA').prop("disabled", false);
-        $('#btnA').css("background-color","yellow")
+        $('#btnA').css("background-color","yellow");
     }
     function btnFClick(e){
         active=false;
@@ -241,7 +241,7 @@
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間："+period);
         $('#btnA').prop("disabled", false);
-        $('#btnA').css("background-color","yellow")
+        $('#btnA').css("background-color","yellow");
     }
 
     
@@ -257,6 +257,9 @@
             if(rest<=0){
                 active=false;
                 alarm();
+                $('#remain').css("color","lightgreen");
+            }else{
+                $('#remain').css("color","red");
             }
         }
 
