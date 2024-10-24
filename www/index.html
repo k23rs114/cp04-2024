@@ -224,10 +224,18 @@
          btnAClick(null);
     }
     function btnEClick(e){
-        
+        active=false;
+        period=180;
+        $("#time").html("経過時間：0");
+        $("#remain").html("残り時間："+period);
+        $('#btnA').prop("disabled", false);
     }
     function btnFClick(e){
-        
+        active=false;
+        period=300;
+        $("#time").html("経過時間：0");
+        $("#remain").html("残り時間："+period);
+        $('#btnA').prop("disabled", false);
     }
 
     
