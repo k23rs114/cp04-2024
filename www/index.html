@@ -197,6 +197,7 @@
     function btnAClick(e){
         active=true;
         startTime=new Date();
+        $('#btnA').prop("disabled", true);
         
         
     }
@@ -205,6 +206,7 @@
     function btnBClick(e){
         active=false;
         period=rest;
+        $('#btnA').prop("disabled", false);
         
     }
 
@@ -215,6 +217,7 @@
         period=60*parseInt($("#minute").val())+parseInt($("#second").val());
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間："+period);
+        $('#btnA').prop("disabled", false);
     }
     function btnDClick(e){
         btnCClick(null);
