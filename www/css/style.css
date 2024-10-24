@@ -60,6 +60,25 @@
         font-size: 10px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
+    #btnD {
+        font-size: 20px;
+        position:absolute; top:580px; left:2%; width:32%; height:60px; 
+        background-color: yellow;
+        color: green;
+    }
+    #btnE {
+        font-size: 20px;
+        position:absolute; top:580px; left:34%; width:32%; height:60px; 
+        background-color: yellow;
+        color: green;
+    }
+    #btnF {
+        font-size: 20px;
+        position:absolute; top:580px; left:66%; width:32%; height:60px; 
+        background-color: yellow;
+        color: green;
+    }
+
     
     #minute {
         font-size: 30px;
