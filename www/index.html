@@ -35,17 +35,17 @@
             btnBClick(e);
         });
 
-        $('#btnD').click(function(e) {
-            btnCClick(e);
-        });
-        $('#btnE').click(function(e) {
-            btnCClick(e);
-        });
-        $('#btnF').click(function(e) {
-            btnCClick(e);
-        });
         $('#btnC').click(function(e) {
             btnCClick(e);
+        });
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
+        $('#btnE').click(function(e) {
+            btnEClick(e);
+        });
+        $('#btnF').click(function(e) {
+            btnFClick(e);
         });
         init();
     });
@@ -172,6 +172,9 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
+        $('#btnE').prop('disabled', false);
+        $('#btnF').prop('disabled', false);
         
     }
 
@@ -201,6 +204,7 @@
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active=false;
+        period=rest;
         
     }
 
@@ -212,6 +216,16 @@
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間："+period);
     }
+    function btnDClick(e){
+        
+    }
+    function btnEClick(e){
+        
+    }
+    function btnFClick(e){
+        
+    }
+
     
  
     // 繰り返し実行する処理
